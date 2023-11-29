@@ -1,0 +1,26 @@
+@media (min-width: 320px) and (max-width: 575px){
+    .home-con-main h1 {
+        font-size: 50px;
+    }
+    .btn-home{
+        margin-bottom: 15px;
+    }
+    .social{
+        padding: 0 0;
+        display: none;
+    }
+    .about_1{
+        padding:0 0 ;
+    }
+    .menu{
+        padding: 0 0;
+    }
+    .btn-reserve{
+        margin: 30px auto;
+    }
+}
+@media (min-width: 576px) and (max-width: 766px){
+    .btn-reserve{
+        margin-left: 209px;
+    }
+}

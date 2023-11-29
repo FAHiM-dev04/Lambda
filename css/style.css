@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Lato&family=Open+Sans&family=Yeseva+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Yeseva One', cursive;
+}
+ul, li, a{
+    text-decoration: none;
+    list-style: none;
+}
+:root {
+    --nav: 'Gentium Book Plus';
+    --p: 'Lato';
+    --h: 'Yeseva One';
+}
+/* root css end */
+
+/* header & navbar */
+header{
+    background: url(../img/home.png) no-repeat center;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 120px;
+    height: 100%;
+}
+.navbar{
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    background-color: #00000034;
+}
+.offcanvas{
+    background-color:#0b0f10;
+}
+.nav-link{
+    color: white;
+    font-size: 21px;
+    font-family: var(--nav);
+    position: relative;
+}
+.nav-link:hover{
+    color: white;
+}
+.nav-link::after{
+    content: " ";
+    position: absolute;
+    background-color: white;
+    height: 4px;
+    width: 0;
+    left: 0;
+    top: -30px;
+    transition: 0.5s;
+}
+.nav-link:hover:after{
+    width: 100%;
+}
+.social i{
+    padding: 0 5px;
+}
+.home-con-main h1{
+    font-family: var(--h);
+    font-size: 90px;
+    padding: 160px 0 30px;
+}
+.home-con-main a:hover{
+    color: white;
+}
+.btn-home { 
+    border-width: 1px;
+    color: white;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0.278);
+    opacity: 0.702;
+    border-radius: 0px;
+    left: 814px;
+    top: 551px;
+    width: 226px;
+    height: 55px;
+    z-index: 266;
+    margin: 0 20px;
+    margin-bottom: 0;
+}
+.btn-home:hover {
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.702);
+    opacity: 0.8;
+    left: 556px;
+    top: 551px;
+    width: 226px;
+    height: 55px;
+    z-index: 270;
+}
+/* about */
+#about{
+    background: url(../img/pattern.png) no-repeat center fixed;
+    background-size: cover;
+    background-position: center;
+}
+.extra-bg{
+    background-color: #9490901f;
+}
+.about_1{
+    padding:0 0 100px 110px;
+}
+.ah{  
+    color: #cc9900;
+    padding-top: 100px;
+}
+.about_1 p{
+    font-family: var(--p);
+    font-size: 16px;
+    color: #4c4c4c;
+    padding-bottom: 45px;
+}
+.about_2{
+    padding-top: 80px;
+    padding-left: 17px;
+}
+/* ingredients */
+#ingredients{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 100%;
+    width: 100%;
+    background: url(../img/Ingredientsbg.png) no-repeat center;
+    background-size: cover;
+    background-position: center;
+}
+.ingrediants-con-main{
+    padding: 0 72px;
+    padding-top: 80px;
+    background-image: url(../img/incbg.png);
+}
+.ingrediants-con-main h4{
+    font-family: var(--h);
+    font-size: 35px;
+}
+.ingrediants-con-main p{
+    font-family: var(--p);
+    font-size: 15px;
+    padding-bottom: 72px;
+}
+.spc{
+    padding-bottom: 75px;
+}
+.bg {
+    background-image: url("bg.png");
+    position: absolute;
+    left: 0px;
+    top: 1460px;
+    width: 1600px;
+    height: 758px;
+    z-index: 216;
+}
+/* menu */
+#menu{
+    background: url(../img/menu-pattern.png) no-repeat center fixed;
+    background-size: cover;
+    height: 100%;
+}
+.menu{
+    padding: 40px 0;
+}
+.common_head h3{
+    color: #cc9900;
+    padding-top: 55px;
+}
+.common_headmd h3{
+    color: #cc9900;
+}
+.item p{
+    color: #cc9900;
+    font-family: var(--h);
+    font-size: 20px;
+    text-align: left;
+}
+.price p{
+    color: #cc9900;
+    font-family: var(--h);
+    font-size: 20px;
+    text-align: right;
+}
+.menu_cont{
+    font-family: var(--p);
+    font-size: 16px;
+    color: #4c4c4c;
+}
+hr{
+    color: #cc9900;
+}
+/* menu part css end */
+/* review */
+#review{
+    background: url(../img/guest-bg.png) no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+.review{
+    background: #0b0f10af;
+    padding: 70px;
+    margin: 100px auto;
+}
+.review p{
+    font-family: var(--h);
+    font-size: 18px;
+    color: #dde0df;
+}
+.review_p1{
+    font-family: var(--p);
+}
+/* review end*/
+/* reservation */
+#reservation{
+    background: url(../img/pattern.png) no-repeat center fixed;
+    background-size: cover;
+    height: 100%;
+}
+.reserve{
+    padding: 100px 0;
+}
+.food_1{
+    margin-top: 20px;
+}
+.food_2{
+    margin-top: 20px;
+}
+.common_head_food h3{
+    color: #cc9900;
+    font-family: var(--h);
+    font-size: 35px;
+
+}
+.food_content p{
+    color: #4c4c4c;
+    font-family: var(--p);
+    font-size: 16px;
+    padding-top: 20px;
+}
+.order_form{
+    margin-top: 20px;
+    font-family: 'YesevaOne';
+    color: #cc9900;
+    padding: 10px 10px;
+}
+.book_now{
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px 10px;
+}
+.order_form input:hover{
+    border: 2px solid #cc9900;
+    color: black;
+    
+}
+.order_form ::placeholder{
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-size: 16px;
+}
+.btn-reserve{
+    background-color: #c9a131;
+    width: 200px;
+    height: 35px;
+    color: white;
+    border: white;
+    margin: 30px 115px;
+}
+/* footer */
+.about_us h5 , .hours h5{
+    font-family: var(--h);
+    font-size: 20px;
+}
+.about_us p , .hours p{
+    font-family: 'Open Sans';
+}
